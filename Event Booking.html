@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type = "text/css">
+    p
+    {
+        font-family: "Myriad Pro", "sans-serif";
+        font-size: 10pt;
+        color: black;
+    }
+    h1
+    {
+        font-family: "Myriad Pro", "sans-serif";
+        font-size: 10pt;
+        color: black;
+    }
+   
+   </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script1.js"> </script>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('https://media.istockphoto.com/photos/wedding-party-evening-blurred-dance-floor-and-wedding-cake-picture-id673216550?b=1&k=20&m=673216550&s=170667a&w=0&h=PsHnJTmQr_F6kIpafsAefcLOnuMZ0Ze9gNb7zqawgVw=');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+    
+      <h1 style="color: white;"><center>BOOKING DETAILS</center></h1>
+ <form  name="RegForm" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-4 col-md-4">
+
+                <table class="table table-borderless">
+                    <tr>
+                        <td><strong style="color: white;"> Username</strong></td>
+                        <td><input style="color: maroon;" type="text" name="Name" class="form-control" placeholder="Username" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;"> Email id</strong></td>
+                        <td><input style="color: maroon;" type="text" name="EMail"  class="form-control" placeholder="abc@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;"> District</strong></td>
+                        <td><input style="color: maroon;" type="text" class="form-control" name="district" placeholder="District" required  ></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;"> State</strong></td>
+                        <td><input style="color: maroon;" type="text" class="form-control" name="state" placeholder="state" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;"> Password</strong></td>
+                        <td><input style="color: maroon;" type="password" name="Password" class="form-control" placeholder="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;"> Confirm password</strong></td>
+                        <td><input style="color: maroon;" type="password" class="form-control" name="cpass" placeholder="Confirm Password"required></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;"> Event</strong></td>
+                        <td><input style="color: maroon;" type="date" class="form-control" name="date" placeholder="Confirm Date"required></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;">   Event Time</strong></td>
+                        <td><input style="color: maroon;" type="time" class="form-control" name="time" placeholder="From to To"required></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white;"> Payment Details</strong></td>
+                        <td><input style="color: maroon;" type="payment" name="pay" class="form-control" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="check" value="" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      <strong style="color: white;">Agree to terms and conditions</strong>
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                  <tr>
+                    <td></td>
+                    <center>
+                    <td><button class="btn btn-success" onClick="validate()" type="button">Book Event Now</button></td></center>
+                </tr><br>
+            </table>
+
+            </div>
+            <div class="col col-12 col-sm-4 col-md-4">
+            </div>
+            <div class="col col-12 col-sm-4 col-md-4">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUUFBUVFBQZGBgYFBkVGxsaGB0aGRoUGhgdGxgbGBsbIi0kHx8qHxgbJTclKi4xNDU0HSM8PzozPi0zNDEBCwsLEA8QHRISHTUrJCo+PDYzMzM1MTY1Mzk8NTwxOTMzMzEzPTY8MzMzMzU8MTw8NTQzOTMzPDUzMzUxMzM1Nf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwECBAUGCAP/xAA9EAACAgEDAgMGAwYFAwUBAAABAgADEQQSIQUxBkFRBxMiMmFxI0KBFHKCkaGxM1JikvAkY9FTc6LB0xX/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBAX/xAAkEQEBAAICAQQCAwEAAAAAAAAAAQIRAzEhBBJBUSJhE6HwBf/aAAwDAQACEQMRAD8Al6IiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiJj6zXVUrvutStf8zsqD+bEQMiJzdvjvpinB1tX8JLD+agiKvHfTW4XW1fxMUH82AgdEWhBMLQ9U093+FfVZ+5aj8/wk+szyICIiAiIgImNr9bXRW1lzqiKMszHAH/k+gHJkb9I9r9L32JqU93UXPurFBOEzhffLyQSOcrnGcY84EoxPnTarqrIwZWUMrKQVZSMggjggjzn0gIiICIlC0CjNCCUVfX/AIZfAREQEREBERAREQEtYgAknAAySewHmTLpFPtp8VNWi6GpiGsXfcQcEVk4Wv8AiIJP0AHZjAwvG/tXbc1HTyAAdrXkAlj5+6U8Af6z38scE8H0bw9r+qWF0D2nOHutc7R9GdsknnsMn6Tb+zbwMeoWG23I01bYbHBsfvsU+QwQWPkCAOTkegtLpkrRa60VEQbVVRhVHoAIETdN9igwDqdWc45WpOAfPDuef9om0HsY0P8A62q/31//AJyS4gRbqfYtpSPw9Vcp/wBao/8AYLMYezbqmnA/Y+qHC4wpeypcD/SpdT9jxJbiBEe/xRpz2XUKB6UuD/La5nxs9onWas+/6aBjzNFyf13EH7iTFAMCE7PbVqO37HUD25Z+/wBuJrNZ7X+oPkItNeexWssw/wB7MD/KT8yg9wD9xn+8olYHyqB9gB/aB5Z6/wBS1tzJZrHubOSnvAyrxjdsXAUdxnaPOYvRumvqtRVp6/mscICecA/Mx+ijJP0E3/tN69+2dQsKtmur8Cv0IQnc31y+459NvpOv9iPQcvdrGHCfgV5/zkA2EfZdq/xGBLmg0iU111VDCV1qijudqAKMnzOB3mREQEREBKYlYgIiICIiAiIgWlpdEQEREBPL/jK99V1TUkDcz6lqkA7kK3uqx98Ks9QiedOkaIDxAtdg+XqLnn1SxmQ/YkA/WBPPQOkppNNVp0+WtApP+Z+7ufqzEn9ZsYiAiJVe8Dyl1vxBfqtS+oextxYsuGP4Yz8Kpj5QBgcffvJ59lvX7NZoQ1xLPVYaWc93CqrKzfXDgE+eM+c83T0n7LOjHS9NqDjD2ltQw9N+Amf4FTj1JgdjERAsd8f87nyE5zx/1w6LQ22hvxGAqr/9x8gEepVdzfwzpLAcHHfuPTI5GfpmQN4p8ZXat9MXoCe53hkDNj37cZKkZBCjABzjLcyuV0OIrCWFVCBHJwuCSrMeApViSCSfmBx24HJHpXwv09NDpKNO7AMiLuxk7rXbLEeZy7ED7SEvZz0Cy7X1kqv4I/aSCRtJVgEBK5xlyPLsp+8njTdKUbWsLOy7cEn5SPMFcZPqT6t2BxE/Sa2KtkAjzGe2O/0PIlYiWQREQEREBERAREQEREBERAREtYwKkyF/ad086Lqmm6kqk1vbU748raiNy/Tcigj1O70kzqswOudIq1dFmnuGVcYz5qw+VlJ7EHkf+IGejhgGUgqQCCOxUjII/SXTiPC/UW0AXp+vdV2fDptQ3w1X0/lTceFde2wntjGeCexs1NaLvaxFUDO5mAXHrknED7TiPad4vGh0xqRv+ouUqgHdFPBsPpjkL6n90zB8V+1XS6dWTSkai7BAI/wUOOCW/P37Lx35EhoDV9T1X5rr7WyfsOMnyVVH2AEDZ+zjw5+3a2tHXNVf4tvoUU8L/E2Fx6Z9J6XnN+B/CtfTdOK1INj4e1x+dscBfPYuSB+p8zOkgIiUZgASeAP0/vA5H2j9bu0mmrs07bX9+m44BIq2ueVP5Syqufr64kCa66yy2x+7vY9nA4AZixxngDLf0nd+NfHDazTe7qR6mdkWxWdWTahLghuNpDAA5ABE4bRklkrX47HdawDwocnAJIOWwW7Yx9T2lLd9JSx7JtBbXp3sCZe+wku5bBqryqLuxjO73nbPDL6cSD0/QFMs7b2IUbiPiACqCoPp8IPlzz3ms0OkvWquurCIlQrHlkfACQeTv+B8PjB35Hqd+BtGMk9+TycEk9/6fp+smRC4nErLFX1l8sEREBERAREQEREBERAREQKMZaF9ZfEBERAxOo9Pq1FbVXVrYjd1YZH0I9CPIjkSMes+xitmLaTUlATnZYu8DJ7B1IOB9QT9ZLMQIc6f7FTkG/Vjbnla6zuI+jMcD/aZJfh7w3ptDXs01YXONzn4nfHbcx5P24A8gJuIgIiIFCf1mn8R9QWmrLuELOAhwzKSPiw+BwDg5/Tv2m0v+UnnK/EAM5yBkDAI3fu+c4nxdamq0bOrjdSUd2wFGDurwMk7TuO4Ak+Yye8pnbJ4SiPxbq621l61qoXf8W3hS4w1m0EDjeGAPbB48ptvBvS21OU04G5VDOed5J3Hk4wAdrYGcfXJGdB1yvcyuBhyprYdvjBUA8842sOfTE3fg/ruo0amnSbGe2wEkpuZ3xtVBk9h3+5PPlKXVnlCaeg9NspREZ/gVFCgEjncSxdSO5JJ78dvLJ3QWYeld2SpbwnvSgscJwgdcZ2gsWwCfr2MyNTeK0d2B2ohc7QWO1QSQqryTgdgOZrPHgfUGJh6XqVT102B1C3Kpr3fAz5XeAFbBLbQTj6GaTxV440vT2Su7e9jAMK61DMFJwC24gAEg45z9IHURND4e8WaXWtZXS595WSHrcbXAVtpYckMufME4yM4yJvpIREQEREBERAREQEREBERAREQEAyhEAQKxEQBMsptV1DIwZTyCpBBH0ImN1ehrNPdWnzPS6L+8yED+pkS9K6w9DgqxRsnIOdrAd1ZfPGDwZhy83ss8bgk7rPUNmnvuQsTXVaQvKh2CjBHGTg4wR6/WQl17xDqrdJZTYSxNiF2K7WYIMhHUALkYQ5wGwuDnAx3fVNU7GutXIU1phAuxa1dVZUXacMACAOBjy+ms6l05cBHYsj43D5TkcAjzx8I59BjtKXl87j0uP8A5/v45lvVvmRF+ioe5q61yWssVBwTjd548wAf6ScOmdR6bozsorVcBF96F3s4C5LcDGctjAIHJx2AMVdFot3P7tBsoZ6wW2Jte9jWosc4ySARt5PfgDkSB0HwoDZnV2ou34mUH4iFA3DPZFGNpOc8H7zTK34jz9Sdt91nwzXq9XpeoVahkdFR1UAA2pW28BC2GTIYqeCCCMgee612ttrNlgZHrelTQiqd5vJCgFs4IYumOBjnOACTqeoX+5a7WWXUWVotQ0nwqPd+8/DdBaO6vtBJ5wOeAJb7y3dprVpdkXZRSgH4q1kbX1NiPgKdoAAO4qrfEAWIXXaro69FXmn3iqz1j8MHBKYXaSmec7e7D/xIe9r2nFXUV1DYwdOjIp/NarMoGP8AKu1WPl2H5pKR8PUW6yrWl3e2lGpU71Kg/EDuVRgMN7DAwOeRkCRL7buo12auqqs5amorYR2DO24L9wOT+9947HIeDta9Wv0llZO79orX6srsFZT91Yj9Z6nnn32PeHzqNYL2H4en/Ez5G45Fa/cHLfwj1noECSKxEQEREBERAREQEREBERAREQEREBESjsFGWIA9ScD+ZgVnHeI+k6BbC9yENZ8WFdl3NzlmA4UcD4geSTxNxqfFOhrJD6zTgjuPeoWH6AkzivEuqSy+ywksrfCvdeFUDjzHn/PM5PV8kwxn3emnFx3O6jB611pbGG1OFCjcdqlVHwr8owMY8iASD2BwvO6/xEp94tZdyoGLAAUBzlj6HA57ENg/QzY6tPe6a6ughWdFzgAhijBgpP8AqYAEn0HfmfDR0GihaycEEsQMhck54HfzP85hxZY3ze/p6vp/5p+G/Gu9f0y9HctNVlVZOy2wWuWbcznbg5bzBJ3ff7mbvouop93b+0ZZbiayq/PYrLh0zkbaxvJOCMsxxjndyibi1ddeAz+Z4A74A/l2A9OPOX1uwY7sBkYodvY4Pcf3yJ0bynlbLj48/wAdadh4c6HQ6h2A21sxo05f4KHzy7szB3uOM7h8Kljt9ZjdW8eV6N6kehyzotl6rrTYa8sy7A4zvYAFsblHI9czivEf7VYaq6LnPvCa1oRipJOCe2CyknJ3E4OfWfXpnsl19pzZs06E873Dtt/dryCfuRN8LubeTzYezO4vr1P2iVaeuzT9JpalHsax7XYs5dsBjWrFtnCrgkn7A8zmfC3hfU9SuxWDt3ZsubJRc8ksfzMc/KOTnyGSJb6H7I9FThr2bUuPJvw68/uKdx+xYj6Tv9NpkrRa60VEUYVUUKoH0A4EuyYHhvoVWh060Uj4V+JmPzPYcbnY+pwPsAB5TaxEBERAREQEREBERAREQEREBESK/G/tVSotToNruMg3H4kU/wDbHZz3+I/D+9AkTq/WdPpE95qbUrXnG48tjyRR8TH6AGRv1z2zVrldHQ1h7b7TsXPqEX4iPuVkZ6Dp+t6rexXffYfndm4UE8bnbhV74H6ASU/DfsforAfWOb377EJSoH0LcM33+H7QOC1ftA6trG93Xa6luyaZNrfwlAX/APlL9N4A6vrCHtrcZHz6izDD7qxLj/bPQPT+nVadNlFSVr6IgUH747n6mZJMCE9H7FriPxdXWh9K0az+rFJldb6cVzUh3BcJu3M2SpA5zyckAEnvg/SS+CPP1A59T2/uJyHtAtr0+mv1KoPeVhFUOGCMzuBkAY3MAzHv3HPac3qePLPXts3Pt0cHJMN76rgumaQ17nsbABJPHA/L2Pft3x/aYVessudzuwi4wvzkZ/KGPOMhj+vGJgabxC2oUpdlF2sp91tDNu5XIcngYA7jifDQar3db2LYoYEV+6ZGKvXjO8OCOQST5frnE5sOPKZW5dt56mTKTHep22gp3fC+eMkEckcZPfv6faffQ1kHatYIwxy65IPfcMcBgM4P3M2mlrNZ0htdVsvtT4VQh6tO5VEssDfDu3ugIIxznnkTSaLxFZTeff6Ws7HYNUN1aqwz8IY7igDDz9MduJ0e268t76vhl35/3wlrwdYHq3MF3KxVSqKvGBlhtAPOcH1KnE6NFA4Gccnvnuc+fPnND4Y6zp9VXuoVlBOWXacqxA3BiMheR684z2Iz0AnRjNR5nJlMsrlJoiIllCIiAiJQmAZpRZRR/wA+svgIiICIiAiIgIicR7VPEp0WjK1nF2oJrQg8qmPxHH1AIAPkXB8oHE+1Tx81rPotK+K1JW6xT/iN+ZFI/IOxP5jkdvm0Xs+8A2dQb3thNemVsFh81hHdK8/1bsPqe2v8AeFW6jqghyKUw9rDyTPCqf8AMx4H0yfKelNLpkrRK61CIqhVVRgKo7AQPh0vplWmqWqhFRF7Kvr6sTyzHzJyTM2IgJTb/wA+srEC1yQCQMnBwM4yfIZ8pCPtn6276r9k3r7qlEs2AZJuZTy59QrDA7Yb6yXOt9aTS0X3vnbSucEY3MQNiqfPczBc+s8u67WvdbZfYSXscuT5bmOT9sZ4HlxI7Gf0TQ2OLnVDiuoBsEZ3u2Eznt2Zj/pRu3eSR0/wzT08vbqbEs1iIllVG74UJcBbACw95tOPIAFW4OA0+/gnw77rT6erU1BRde7OfmY+90diVI/GEwlj/Cc82JzliB03VenVbfeay+ulUo9y5atAxxYrK1V7fHsODhATgvg8jErlj3Z2RHHRGZ9VZS9FjrqU/ZhamWNe/Gx/lPwI6B8bhjbnnGD1bdP0utRbNWwrvF3ubdrhXW1QQ6MW4xu3EFgeAuDgkTa6rq9Gh6c9ukKWKzqlTht4suK8s+3GNu1iV4HGOMzktHoP2yirValgosteu2xQR7vVFlCXEf5HUpW+DgFazxggVxn46+U12XQenV6FGSi4Et8b7zkNtA2shUFQrBX9OxH5fh6rS31nIVkLfMwTjJP5sd+f18xk4nDaHo1fTbS2o1aDdUSgYqoLDPcOfiPA/mZvtL1EmtLEsqC2NtV60DoxH5eD+UhhgnPJxnGROP7iHSZiYek1WQdyuu3u7gID/Yd89h/eZsvAiIkhKFZWICIiAiIgIiIFpaXREBPPftn6kbeomvPw0VJWB5bmG9j9/jA/hnoSeb/H2mNnW76zxv1Fa/o6oB/QwJh9mHQhpOn1ZGHuAvc+eXGUU57bU2jHru9Z18oqgcDsOB9h2lYCIiAiJx/tH8XDp+m+E/8AUWgpWOPh4+Kwj0Xy9SR5ZwEd+2bxV764aOps10tmwg8Nf22/ZBkfct6TlPCHQtXrnarTYIqxeQ5/D3ggLkEFSxyeCMEKZz/xO3mzMfqSzE/zJJM9Lezzwz//AD9IqMB76z8S0/6iOEz6KOPvuPnAydVp7EWg2FSK395ZhSBsapq7jknOA93vC3fCmfa/oy2U2UayxtQltxK7l2FFyGRA1eD8O3O8nJ/pM00Wm8sXU0+52BNnxiwtlm35+UqAMY8v53dL0CaepKkZmVc4LsXbkk8luT3ka10OZ6/4LrbRDSaRFr2Wi1dzMQXYlXZ2OWJ2sx/QDtxPj1HTr03pVlaqHbY9bBl+CyyzO8lT3UDOPUD9R281/XOmLqqWqY43YIYflYHIOPP7ehMrlj8zsR1X0LSWpTqdWjmkoFFyu5NQQkGrUDklQdwW0c4wGPAZss+L9JRYNDpqrnZLdtahMbSfyKrsGK8nnHY5ycmdZR0h6dC1FTA2iixQ2ODa4YjhvLccAn0/Sc54MqvbRs6s9FyGyl0avKMVAO5EODU2Dj4CE3ZYoe0Trz2l0N5qNu0OMlUV0V1JpYglM1sSEzhuQB2bnPfYro7MqXvcgd1AChie+SOQO2MHPfk5InH+A6wmnR9JQLFvf8ey3UZt44PvFNYBI3MdoyOe53ZnfZkyxCsREsEREBERAREQEREBERASEfbJ01tPraNci/C4TJ/71JGMnyygXH7rekm6arxL0SrW6d9PaPhbkMPmRx8rr9QfLzBI84GxqvV1V1OVdQ6kdirDIP8AIz6TiPA+tfTY6brCFuqGKHJwmo0+fh92T3ZexXvjHocdvARB9Zw/iv2l6TRhkrYai4cBUbKKf9bjgcjsMn7d4G/8T+IqdBQ11zfREB+Ox8cKv/2ewE81eIut263UPqLmyzcAD5UQfKijyUD+fJPJMr4h6/qNdabdQ+49lUcKi+SovkP6nzJPM7n2e+zV7yuo1qMlIwy1nKvb6Fh3VP6nywOYGZ7IPBRdl1+oT4FOaFI+Zwf8Qj0H5fU8+QzNEtrQKAqgAAAAAYAAGAAB2AEugIiICIiAiJRjA+Om01dQYVoqBmLsFUKC7Y3MQPM4GZ95YF9ZfAREQEREBERAREQEREBERAoTLQuZfEDX9a6NRq6zVqa1de4zwyt/mVhyp+okedU8BdUpP/QdTuZPJLLrFZRjsCuUb74WSnEDz9r/AAb1+74bhdauez6pGXv3w1mJkdO9jmtcj31lNS+fxF3H2VRtP+4SeYgcX4Y9m2i0ZFhU32jBD2AEKeOUQfCpyMgnJHkZ2kRAREQEREBERAoTLQuZfEBERAREQEREBERAREQEREBERAREQEREBEoRAECsREBERAREQEREBERAREQEZgiUAgViIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiB//9k=" alt="">
+               <br> <address style="font-family: Georgia, 'Times New Roman', Times, serif;"><br>
+                   <font color="white"> <strong> Jac Florals </strong><br>
+                    Phone Number : 0869 - 2322403<br>
+                    Cochin <br>
+                    Aluva-Kalamasery Road<br>
+                    Eranakulam,Kerala<br>
+                    685531 India </font>
+                </address>
+            </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
